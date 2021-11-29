@@ -1,0 +1,81 @@
+<web-app>
+
+	<display-name>admin dashboard</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>CustomerController</servlet-name>
+		<display-name>CustomerController</display-name>
+		<description></description>
+		<servlet-class>codefe.admin.controller.CustomerController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>NumberController</servlet-name>
+		<display-name>NumberController</display-name>
+		<description></description>
+		<servlet-class>codefe.admin.controller.NumberController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>FoodDrinkController</servlet-name>
+		<display-name>FoodDrinkController</display-name>
+		<description></description>
+		
+		<servlet-class>codefe.admin.controller.FoodDrinkController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>MessageController</servlet-name>
+		<display-name>MessageController</display-name>
+		<description></description>
+		
+		<servlet-class>codefe.admin.controller.MessageController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MessageController</servlet-name>
+		<url-pattern>/MessageController</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<display-name>LoginController</display-name>
+		<description></description>
+		
+		<servlet-class>codefe.admin.controller.LoginController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/LoginController</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AddMenuController</servlet-name>
+		<display-name>AddMenuController</display-name>
+		<description></description>
+		
+		<servlet-class>codefe.admin.controller.AddMenuController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AddMenuController</servlet-name>
+		<url-pattern>/AddMenuController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>FoodDrinkController</servlet-name>
+		<url-pattern>/FoodDrinkController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>NumberController</servlet-name>
+		<url-pattern>/NumberController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CustomerController</servlet-name>
+		<url-pattern>/CustomerController</url-pattern>
+	</servlet-mapping>
+
+</web-app>
